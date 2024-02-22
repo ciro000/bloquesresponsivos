@@ -1,0 +1,128 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+   }
+   #wrapper{
+    width: 950px;
+    background-color: silver;
+    margin: 0px auto;
+    padding: 10px;
+
+    /* puedo agrandar un contenedor para que lo de adentro calce bien 
+    si es que se salen del contenedor y deforman todo! */
+    
+   }
+   #header{
+    display: block;
+    margin: 15px;
+    min-height: 150px;
+    background-color: green;
+   }
+   #navigation{
+    vertical-align: top;
+    display: inline-block;
+    min-height: 300px;
+    width: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: blue;
+   }
+   #main_content{
+    display: inline-block;
+    min-height: 400px;
+    width: 700px;
+    background-color: red;
+   }
+   .subcontents{
+    display: inline-block;
+    min-height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: yellow;
+   }
+   #advertisement{
+    display: inline-block;
+    min-height: 120px;
+    width: 650px;
+    margin: 20px;
+    background-color: purple;
+   }
+   
+   
+   @media (width<=480px){
+
+    #wrapper{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 5%
+    }
+
+    #navigation{
+        display: none;
+    }
+
+
+    #header{
+        width: 90vw;
+        height: 20vh;
+        padding: 1%;
+        margin: 0% 5% 5% 0%;
+    }
+
+    #main_content{
+        width: 90vw;
+        margin: 0% 5% 5% 0%;
+        padding: 1%;
+    }
+
+    .subcontents{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 20vh;
+        margin: 5%;
+        justify-content: center;
+    }
+
+    #advertisement{
+        width: 80vw;
+        height: 15vh;
+    }
+}
+
+@media (481px<= width <=1023px){
+    #navigation{
+        display: none;
+    }
+
+    #wrapper{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 3%
+    }
+
+    #header{
+        width: 90vw;
+        height: 20vh;
+    }
+
+    #main_content{
+        width: 90vw;
+        align-items: center;
+        margin-left: 2%;
+    }
+
+    .subcontents{
+        width: 40vw;
+        margin: 2%;
+    }
+
+    #advertisement{
+        width: 84vw;
+        height: 15vh;
+    }
+
+    
+}
